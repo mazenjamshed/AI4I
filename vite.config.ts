@@ -12,6 +12,12 @@ export default defineConfig(({ mode }) => {
         alias: {
           '@': path.resolve(__dirname, '.'),
         }
-      }
+      },
+        preview: {
+      port: 4756,
+      strictPort: true,
+      host: true, // Makes the server accessible externally
+      allowedHosts: ['ai4i.ai']
+    }
     };
 });
