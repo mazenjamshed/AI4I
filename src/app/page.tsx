@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Users, BookOpen, Target, Shield, Zap, Globe, Brain, Lock, Building } from "lucide-react";
 import Image from "next/image";
@@ -79,7 +79,9 @@ export default function Home() {
               <a href="#about" className="text-sm font-medium hover:text-primary transition-colors">About</a>
               <a href="#pillars" className="text-sm font-medium hover:text-primary transition-colors">Pillars</a>
               <a href="#action" className="text-sm font-medium hover:text-primary transition-colors">Call to Action</a>
-              <Button size="sm">Contact us</Button>
+              <a href="mailto:info@ai4i.ai" style={{ cursor: 'pointer' }}>
+                <Button size="sm" style={{ cursor: 'pointer' }}>Contact us</Button>
+              </a>
             </nav>
           </div>
         </div>
@@ -112,13 +114,17 @@ export default function Home() {
               the risks and opportunities of AI.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="text-lg px-8 py-6 bg-white text-primary hover:bg-white/90">
-                Join the Mission
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-6 bg-transparent border-white text-white hover:bg-white hover:text-primary">
-                Learn More
-              </Button>
+              <a href="mailto:info@ai4i.ai" style={{ cursor: 'pointer' }}>
+                <Button size="lg" className="text-lg px-8 py-6 bg-white text-primary hover:bg-white/90" style={{ cursor: 'pointer' }}>
+                  Join the Mission
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </a>
+              <a href="mailto:info@ai4i.ai" style={{ cursor: 'pointer' }}>
+                <Button variant="outline" size="lg" className="text-lg px-8 py-6 bg-transparent border-white text-white hover:bg-white hover:text-primary" style={{ cursor: 'pointer' }}>
+                  Learn More
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -335,10 +341,12 @@ export default function Home() {
               </Card>
             </div>
             
-            <Button size="lg" className="text-lg px-8 py-6 bg-white text-primary hover:bg-white/90">
-              Support Our Call to Action
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <a href="mailto:info@ai4i.ai" style={{ cursor: 'pointer' }}>
+              <Button size="lg" className="text-lg px-8 py-6 bg-white text-primary hover:bg-white/90" style={{ cursor: 'pointer' }}>
+                Support Our Call to Action
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -372,9 +380,11 @@ export default function Home() {
               <p className="text-sm text-primary font-medium mb-4">
                 info@ai4i.ai
               </p>
-              <Button variant="outline" size="sm" className="mt-2">
-                Get in Touch
-              </Button>
+              <a href="mailto:info@ai4i.ai" style={{ cursor: 'pointer' }}>
+                <Button variant="outline" size="sm" className="mt-2" style={{ cursor: 'pointer' }}>
+                  Get in Touch
+                </Button>
+              </a>
             </div>
           </div>
           
